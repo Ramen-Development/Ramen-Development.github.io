@@ -1,0 +1,24 @@
+{
+  "name": "Ramen-Development.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d Page"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramen-Development/Ramen-Development.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://Ramen-Development.github.io",
+  "bugs": {
+    "url": "https://github.com/Ramen-Development/Ramen-Development.github.io/issues"
+  },
+  "homepage": "https://github.com/Ramen-Development/Ramen-Development.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
