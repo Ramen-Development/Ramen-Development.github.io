@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Ramen Development_</title>
+    <title>Ramen Development_</title>
     <meta name="description" content="Mexican 🇲🇽 Software Development Team">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -26,15 +26,15 @@
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="spanish.html">Español</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#about">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#contact">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a id="lang" class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#" onclick="changeLang();">Español</a></li>
+                    <li class="nav-item" role="presentation"><a id="aboutLink" class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a id="portfolioLink" class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item" role="presentation"><a id="contactLink" class="nav-link js-scroll-trigger" data-bs-hover-animate="swing" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="masthead text-center text-white d-flex" style="background-image: url('assets/img/header.jpg');">
+    <header class="masthead text-center text-white d-flex" style="background-image: url('assets/img/header.jpg'); background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
         <div class="container my-auto">
             <div class="row">
                 <div class="col"><img class="img-fluid" src="assets/img/RAMEN-DEV.png" width="100" height="100"></div>
@@ -43,34 +43,35 @@
                 </div>
             </div>
             <div class="col-lg-8 mx-auto">
-                <p class="text-faded mb-5">We are broke, that's why we have ramen in our name</p><a class="btn btn-dark text-monospace text-capitalize btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="swing" href="#services" style="background-color: #8c2633;">About us</a></div>
+                <p id="intro" class="text-faded mb-5">We are broke, that's why we have ramen in our name</p>
+                <a id="aboutBtn" class="btn btn-dark text-monospace text-capitalize btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="swing" href="#about" style="background-color: #8c2633;">About us</a></div>
         </div>
     </header>
-    <section id="services" style="color: rgb(255,255,255);">
+    <section id="about" style="color: rgb(255,255,255);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Made with love and hunger from GDL MX 🇲🇽</h2>
+                    <h2 id="titleAbout" class="section-heading">Made with love and hunger from MX 🇲🇽</h2>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-3 col-xl-2 offset-xl-1 text-center">
-                    <div class="mx-auto service-box mt-5"><i class="fa fa-heart fa-4x text-primary mb-3 sr-icons" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true"></i></div>
+                    <div class="mx-auto service-box mt-5"><img src="assets/img/undraw_icon_design_qvdf.svg" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true" width="200px" height="200px"></div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-6 offset-xl-0 text-center">
-                    <div class="mx-auto service-box mt-5"><i class="fa fa-code fa-4x text-primary mb-3 sr-icons" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true"></i></div>
+                    <div class="mx-auto service-box mt-5"><img src="assets/img/undraw_code_thinking_1jeh.svg" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true" width="200px" height="200px"></div>
                 </div>
                 <div class="col-md-6 col-lg-3 col-xl-2 offset-xl-0 text-center">
-                    <div class="mx-auto service-box mt-5"><i class="fa fa-spoon fa-4x text-primary mb-3 sr-icons" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true"></i></div>
+                    <div class="mx-auto service-box mt-5"><img src="assets/img/undraw_eating_together_tjhx.svg" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true" width="200px" height="200px"></i></div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p>We are a Mexican software development team based in Guadalajara, Jalisco formed by three Students of Universidad de Guadalajara with professional experience in the area.</p>
+                    <p id="shortDesc" class="text-faded mb-5 text-center">We are a Mexican software development team with proffessional members and students from all around the country.</p>
                 </div>
             </div>
         </div>
@@ -78,11 +79,11 @@
     <section id="portfolio" class="p-0">
         <div class="container-fluid p-0">
             <div class="row no-gutters popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href="assets/img/fullsize/1.jpg"><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Android/IOS</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
+                <div class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href=""><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Android/IOS</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
                 <div
-                    class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href="assets/img/fullsize/2.jpg"><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Desktop</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
+                    class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href=""><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Desktop</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
             <div
-                class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href="assets/img/fullsize/3.jpg"><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Web</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
+                class="col-sm-6 col-lg-4"><a class="text-center portfolio-box" href=""><img class="img-fluid" src="assets/img/RAMEN-DEV.png" style="filter: blur(5px);" width="250"><div class="portfolio-box-caption"><div class="portfolio-box-caption-content"><div class="project-category text-faded"><span>Web</span></div><div class="project-name"><span>In development 👨‍💻</span></div></div></div></a></div>
         </div>
         </div>
     </section>
@@ -90,8 +91,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <p class="mb-5">Ready to start your next project with us? That's great! Send us an email and we will get back to you ASAP!</p>
+                    <h2 id="titleContact" class="section-heading">Let's Get In Touch!</h2>
+                    <p id="contactDesc" class="mb-5">Ready to start your next project with us? That's great! Send us an email and we will get back to you ASAP!</p>
                 </div>
             </div>
             <div class="row">
@@ -108,6 +109,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/creative.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
