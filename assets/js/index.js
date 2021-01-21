@@ -24,6 +24,7 @@ function spa(){
     $("#shortDesc").text("Somos un equipo de desarrollo de software Mexicano con miembros profesionales y estudiantes de todo el país.");
     $("#titleContact").text("Pongamonos en contacto!");
     $("#contactDesc").text("Listo para comenzar un proyecto con nosotros? Envianos un email y contestaremos ASAP!");
+    $("#titlePortfolio").text("Nuestro trabajo 👀");
 }
 
 //Cambia el lenguaje a ingles
@@ -32,3 +33,28 @@ function eng()
     //Como es el lenguaje default solo recarga la pagina xdd
     location.reload();
 }
+
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
